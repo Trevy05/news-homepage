@@ -125,7 +125,7 @@ h1 {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  padding: 1em 1em;
+  padding: 2em 1em;
 
   background-color: var(--very-dark-blue);
 }
@@ -222,6 +222,10 @@ h1 {
   color: var(--very-dark-blue);
 }
 
+.hamburger-menu {
+  display: none;
+}
+
 .close {
   display: flex;
   justify-content: flex-end;
@@ -230,7 +234,7 @@ h1 {
 
 @media screen and (max-width: 1000px) {
   body {
-    font-size: 13px;
+    font-size: 12px;
     margin: 0;
     padding: 1em;
   }
@@ -242,6 +246,10 @@ h1 {
 
   .nav-items {
     display: none;
+  }
+
+  .hamburger-menu {
+    display: block;
   }
 
   #home {
