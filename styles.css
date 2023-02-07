@@ -236,7 +236,7 @@ h1 {
   body {
     font-size: 12px;
     margin: 0;
-    padding: 1em;
+    padding: 1em 3em;
   }
 
   nav {
@@ -266,10 +266,14 @@ h1 {
     grid-row-end: 2;
 
     margin: 0;
+    padding: 0;
+    height: 200px;
   }
 
   #home-image img {
-    background-size: cover;
+    background-size: contain;
+    height: 100%;
+    width: 100%;
   }
 
   #home-cta {
@@ -283,7 +287,7 @@ h1 {
     align-items: center;
     height: 350px;
 
-    margin: 0;
+    margin: 1em;
   }
 
   #home-cta h1 {
@@ -291,7 +295,7 @@ h1 {
   }
 
   #home-cta button {
-    width: 70%;
+    width: 15em;
     height: 3.5em;
   }
 
@@ -313,7 +317,7 @@ h1 {
   }
 
   #footer {
-    margin: 2em 0;
+    margin: 3em 0;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -321,7 +325,18 @@ h1 {
 
   .footer-item {
     display: flex;
-    line-height: 2rem;
-    padding: 1em;
+    line-height: 1.5rem;
+    padding: 0.5em;
+    margin: 1em;
+  }
+}
+
+@media screen and (min-width: 1001px) {
+  .nav-items {
+    display: flex;
+  }
+
+  .hamburger-menu {
+    display: none;
   }
 }
